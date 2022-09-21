@@ -20,4 +20,19 @@ Then, working as a project manager, I've been mastering google App Script enviro
 ## Languages
 + **English** [C1 EFSET certificate](https://www.efset.org/ef-set-50/take-test/#set50-131/result)
 + **French** beginner
+
+---
+
 ## Code example
+
+```
+function isIsogram(str){
+    let arr = str.split('')
+    for (i in arr){
+        for (let b=Number(i)+1;b<arr.length;b++){
+            if (arr[i].toLowerCase()===arr[b].toLowerCase()){return false}
+        }
+    }
+    return true
+}
+  ```
